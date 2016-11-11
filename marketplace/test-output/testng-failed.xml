@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="add_product.add_product_via_seller">
+        <methods>
+          <include name="test_add_product_via_seller" invocation-numbers="0"/>
+          <include name="before_test"/>
+          <include name="after_test"/>
+          <include name="generatecsv"/>
+        </methods>
+      </class> <!-- add_product.add_product_via_seller -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
