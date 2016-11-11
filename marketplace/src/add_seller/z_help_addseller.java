@@ -83,7 +83,7 @@ public class z_help_addseller extends login.openselenium{
 	{
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		Date date = new Date();
-		FileUtils.copyFile(scrFile, new File("/home/users/himanshu.chand/Desktop/errors/testng/addseller/"+date+".png"));
+		FileUtils.copyFile(scrFile, new File(screenshot_path+date+".png"));
 		
 	}
 	

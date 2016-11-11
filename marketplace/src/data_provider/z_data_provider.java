@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
 
 import org.testng.annotations.DataProvider;
 
-public class z_data_provider
+public class z_data_provider extends files.file
 {
 	
 //	DataProvider for add product
@@ -20,7 +20,7 @@ public class z_data_provider
 	@DataProvider(name= "add_product") 
 	public static String[][] addproduct() throws IOException
 	{	
-		String filepath = "/home/users/himanshu.chand/Documents/marketplace/addproduct.csv";
+		String filepath = dataprovider_for_addproduct;
 		get_rownum(filepath);
 		String[][] value= new String[rownum-1][1];
 	  	get_data_values(filepath, value, rownum);
@@ -30,7 +30,7 @@ public class z_data_provider
 	@DataProvider(name= "add_seller") 
 	public static String[][] addseller() throws IOException
 	{	
-		String filepath = "/home/users/himanshu.chand/Documents/marketplace/addseller.csv";
+		String filepath = dataprovider_for_addseller;
 		get_rownum(filepath);
 		String[][] value= new String[rownum-1][1];
 	  	get_data_values(filepath, value, rownum);
@@ -39,7 +39,7 @@ public class z_data_provider
 	@DataProvider(name= "join_seller") 
 	public static String[][] joinseller() throws IOException
 	{	
-		String filepath = "/home/users/himanshu.chand/Documents/marketplace/joinseller.csv";
+		String filepath = dataprovider_for_joinseller;
 		get_rownum(filepath);
 		String[][] value= new String[rownum-1][1];
 	  	get_data_values(filepath, value, rownum);
@@ -49,7 +49,7 @@ public class z_data_provider
 	@DataProvider(name= "add_product_via_seller") 
 	public static String[][] addproduct_via_seller() throws IOException
 	{	
-		String filepath = "/home/users/himanshu.chand/Documents/marketplace/add_product_via_seller.csv";
+		String filepath = dataprovider_for_addproduct_via_seller;
 		get_rownum(filepath);
 		String[][] value= new String[rownum-1][1];
 	  	get_data_values(filepath, value, rownum);

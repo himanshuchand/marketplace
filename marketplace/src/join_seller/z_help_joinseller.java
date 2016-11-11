@@ -100,7 +100,7 @@ public class z_help_joinseller extends login.openselenium{
 	  {
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		Date date = new Date();
-		FileUtils.copyFile(scrFile, new File("/home/users/himanshu.chand/Desktop/errors/testng/addseller/"+date+".png"));
+		FileUtils.copyFile(scrFile, new File(screenshot_path+date+".png"));
 		
 	  }
 	
@@ -138,7 +138,7 @@ public class z_help_joinseller extends login.openselenium{
 		
 	}
 	public void  go_to_sellerside() throws InterruptedException {
-		driver.navigate().to("https://pratik.webkul.com/shopify-trunk/shopify-mp/?sid=40");
+		driver.navigate().to(seller_login_path);
 		driver.findElement(By.xpath("/html/body/div[4]/div[1]/div/div[1]/div/div/div/a")).click();
 		Thread.sleep(250);
 	}
